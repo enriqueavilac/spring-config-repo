@@ -25,7 +25,7 @@ spring:
       '[hibernate.query.fail_on_pagination_over_collection_fetch]': true
       '[hibernate.query.in_clause_parameter_padding]': true
       # modify validations
-      '[javax.persistence.validation.group.pre-update]': pe.com.avila.users.validations.OnCreateStage
+      '[javax.persistence.validation.group.pre-persist]': pe.com.avila.users.validations.OnCreateStage
     hibernate:
       ddl-auto: none
       naming:
