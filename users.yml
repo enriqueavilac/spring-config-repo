@@ -31,6 +31,8 @@ spring:
         implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
   profiles:
     active: dev
+  liquibase:
+    change-log: classpath:liquibase/db.changelog.xml
 
 eureka:
   client:
