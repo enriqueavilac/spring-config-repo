@@ -8,11 +8,11 @@ spring:
     gateway:
       routes:
         - id: main_module
-          uri: lb://main
+          uri: lb://MAIN
           predicates:
             - Path=/api/v1/main/**
         - id: stream_module
-          uri: lb://stream
+          uri: lb://STREAM
           predicates:
             - Path=/api/v1/stream/**
 
