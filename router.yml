@@ -5,6 +5,8 @@ spring:
   profiles:
     active: dev
   cloud:
+    discovery:
+      enabled: true
     gateway:
       routes:
         - id: main_module
