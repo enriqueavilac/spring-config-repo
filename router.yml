@@ -13,10 +13,14 @@ spring:
           uri: http://localhost:8081
           predicates:
             - Path=/api/v1/main/**
+          filters:
+            - StripPrefix=3
         - id: stream_module
           uri: http://localhost:8082
           predicates:
             - Path=/api/v1/stream/**
+          filters:
+            - StripPrefix=3
 
 eureka:
   client:
