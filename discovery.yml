@@ -1,6 +1,10 @@
 spring:
   profiles:
     active: dev
+  cloud:
+    config:
+      override-none: true
+      override-system-properties: false
 
 eureka:
   client:
