@@ -2,6 +2,9 @@ spring:
   profiles:
     active: dev
   cloud:
+    config:
+      override-none: true
+      override-system-properties: false
     discovery:
       enabled: true
     gateway:
